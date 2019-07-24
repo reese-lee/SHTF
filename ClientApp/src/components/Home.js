@@ -7,7 +7,6 @@ export class Home extends Component {
   render () {
     return (
       <div >
-        <body>
           <div className="header">
             <h4 className="title2">When</h4>
             <h1 className="title">S.H.T.F.</h1>
@@ -19,7 +18,6 @@ export class Home extends Component {
             <button className="splashButtons">LISTS</button><br/>
             <button className="splashButtons">INFO</button><br/>
           </div>
-        </body>
       </div>
     );
   }
