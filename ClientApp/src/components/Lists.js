@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import { Layout } from './Layout';
+import { Layout } from './Layout';Í 
 
 export class Lists extends Component {
   static displayName = Lists.name;
