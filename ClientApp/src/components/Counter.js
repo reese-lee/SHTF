@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import { Layout } from './Layout';
 
 export class Counter extends Component {
   static displayName = Counter.name;
@@ -18,8 +19,9 @@ export class Counter extends Component {
 
   render () {
     return (
+      <Layout>
       <div>
-        <h1 className="title2">Counter</h1>
+        <h1 className="title3">Counter</h1>
 
         <p>This is a simple example of a React component.</p>
 
@@ -27,6 +29,7 @@ export class Counter extends Component {
 
         <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>
       </div>
+      </Layout>
     );
   }
 }
