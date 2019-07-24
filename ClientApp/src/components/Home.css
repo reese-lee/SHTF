@@ -26,6 +26,7 @@ body {
   padding-top: 5%;
   padding-bottom: 5%;
   border-radius: 5pt;
+  opacity: .88;
 }
 
 .buttonDiv {
@@ -40,4 +41,5 @@ body {
   font-size: 1.5em;
   border: none;
   width: 90pt;
+  opacity: .88;
 }
