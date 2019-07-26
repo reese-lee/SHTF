@@ -10,7 +10,7 @@ namespace SHTF01.Context
     public DbSet<Category> Category { get; set; }
     public DbSet<Item> Item { get; set; }
     public DbSet<Food> Food { get; set; }
-    public DbSet<Other> Other { get; set; }
+    public DbSet<Supply> Supply { get; set; }
     public DbSet<Contact> Contact { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -43,13 +43,13 @@ namespace SHTF01.Context
     public int FoodCatId { get; set; }
   }
 
-  public class Other
+  public class Supply
   {
-    public int OtherId { get; set; }
-    public string OtherName { get; set; }
-    public int OtherAmount { get; set; }
-    public bool OtherDone { get; set; }
-    public int OtherCatId { get; set; }
+    public int SupplyId { get; set; }
+    public string SupplyName { get; set; }
+    public int SupplyAmount { get; set; }
+    public bool SupplyDone { get; set; }
+    public int SupplyCatId { get; set; }
   }
 
   public class Contact
