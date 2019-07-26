@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router';
+import React, { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Info } from './components/Info';
 import { Maps } from './components/Maps';
-import { CategoriesList } from './components/CategoriesList';
+import CategoriesList from './components/CategoriesList';
+import Category from './components/Category';
 
 const getData = async () => {
   const response = await fetch('/api/Lists/GetCategories');
@@ -21,21 +22,24 @@ function App(props) {
   useEffect(() => {
     getData().then(list => {
       setCategoryList(list)
-    })
-  }, [])
+    });
+  }, []);
 
     return (
       <div>
       <Route exact path='/' component={Home} />
       <div>
+      <Switch>
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/info' component={Info} />
         <Route path='/maps' component={Maps} />
-        <Route path='/lists' component={CategoriesList} />
-
+        <Route path='/lists'  render={()=><CategoriesList categories={categoryList}/>} />
+      </Switch>
       </div>
       </div>
     );
 
 }
+
+export default App;
