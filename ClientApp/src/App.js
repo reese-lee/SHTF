@@ -5,12 +5,25 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Info } from './components/Info';
 import { Maps } from './components/Maps';
-import { Lists } from './components/Lists';
+import { CategoriesList } from './components/CategoriesList';
 
-export default class App extends Component {
-  static displayName = App.name;
+const getData = async () => {
+  const response = await fetch('/api/Lists/GetCategories');
 
-  render () {
+  const categories = await response.json();
+  return categories;
+};
+
+function App(props) {
+
+  const [categoryList, setCategoryList] = useState([]);
+
+  useEffect(() => {
+    getData().then(list => {
+      setCategoryList(list)
+    })
+  }, [])
+
     return (
       <div>
       <Route exact path='/' component={Home} />
@@ -19,10 +32,10 @@ export default class App extends Component {
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/info' component={Info} />
         <Route path='/maps' component={Maps} />
-        <Route path='/lists' component={Lists} />
+        <Route path='/lists' component={CategoriesList} />
 
       </div>
       </div>
     );
-  }
+
 }
