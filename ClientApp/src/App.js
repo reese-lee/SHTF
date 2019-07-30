@@ -7,6 +7,7 @@ import { Info } from './components/Info';
 import { Maps } from './components/Maps';
 import CategoriesList from './components/CategoriesList';
 import Category from './components/Category';
+import {InfoOne} from './components/InfoOne';
 
 const getData = async () => {
   const response = await fetch('/api/Lists/GetCategories');
@@ -34,6 +35,7 @@ function App(props) {
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/info' component={Info} />
         <Route path='/maps' component={Maps} />
+        <Route path='/infoOne' component={InfoOne} />
         <Route path='/lists'  render={()=><CategoriesList categories={categoryList}/>} />
       </Switch>
       </div>
