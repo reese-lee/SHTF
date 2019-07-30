@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Home.css';
 import { Layout } from './Layout';
 import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
-import Collapse from '@kunukn/react-collapse';
 
 export class Info extends Component {
   static displayName = Info.name;
