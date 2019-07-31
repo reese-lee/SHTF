@@ -8,6 +8,9 @@ import { Maps } from './components/Maps';
 import CategoriesList from './components/CategoriesList';
 import Category from './components/Category';
 import {InfoOne} from './components/InfoOne';
+import MapWrapper from './components/MapWrapper';
+import Contact from './components/Contact';
+import ContactsList from './components/ContactsList';
 
 const getData = async () => {
   const response = await fetch('/api/Lists/GetCategories');
@@ -16,14 +19,25 @@ const getData = async () => {
   return categories;
 };
 
+const getContactList = async () => {
+  const response = await fetch('/api/Lists/GetContacts');
+
+  const contacts = await response.json();
+  return contacts;
+}
+
 function App(props) {
 
   const [categoryList, setCategoryList] = useState([]);
+  const [contactList, setContactList] = useState([]);
 
   useEffect(() => {
     getData().then(list => {
       setCategoryList(list)
     });
+    getData().then(contactList =>{
+      setContactList(contactList)
+    })
   }, []);
 
     return (
@@ -36,7 +50,9 @@ function App(props) {
         <Route path='/info' component={Info} />
         <Route path='/maps' component={Maps} />
         <Route path='/infoOne' component={InfoOne} />
+        <Route path='/MapWrapper' component={MapWrapper} />
         <Route path='/lists'  render={()=><CategoriesList categories={categoryList}/>} />
+        <Route path='/Contact' render={()=><ContactsList contacts={contactList}/>} />
       </Switch>
       </div>
       </div>
