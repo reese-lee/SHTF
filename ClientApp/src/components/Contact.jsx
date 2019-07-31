@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Category(props) {
+function Contact(props) {
 
   return (
     <div className="buttonDiv">
-      <button className="splashButtons"><Link to={`/${props.name}`}>{props.name}</Link></button>
-      <br></br>
+      {props.name}
+      <br/>
+      {props.note}
     </div>
   );
 }
 
-export default Category;
+export default Contact;
 
-Category.propTypes = {
+Contact.propTypes = {
   name: PropTypes.string,
   id: PropTypes.number,
   // currentRouterPath: PropTypes.string.isRequired

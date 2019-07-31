@@ -18,11 +18,6 @@ function CategoriesList(props) {
             key={category.id} />
           })}
         </div>
-          <div className="buttonDiv">
-            <button className="splashButtons">Bugout Bag</button><br/>
-            <button className="splashButtons">Food</button><br/>
-            <button className="splashButtons">other supplies</button>
-          </div>
       </div>
       </Layout>
     )
