@@ -23,10 +23,12 @@ export class Info extends Component {
           <h1 className="title3">INFO</h1>
 
           <div className="buttonDiv">
-            <button className="splashButtons" to='/infoOne'>One info</button><br/>
-            <button className="splashButtons">Two infos</button><br/>
-            <button className="splashButtons">The third info</button><br/>
-            <button className="splashButtons">And another one</button><br/>
+            <button className="splashButtons"><a href="https://earthquaketrack.com/us-or-portland/recent">Latest Earthquakes</a></button><br/>
+            <button className="splashButtons"><a href="https://gis.dogami.oregon.gov/maps/hazvu/">Statewide Geohazards Viewer</a></button><br/>
+            <button className="splashButtons"><a href="https://katu.com/news/local/there-are-dozens-of-earthquake-faults-across-oregon-including-one-through-portland">Oregon Fault Lines</a></button><br/>
+            <button className="splashButtons"><a href="https://www.pdxmonthly.com/articles/2018/2/2/the-big-one-is-coming-what-will-happen-to-portland">What will Happen to Portland?</a></button><br/>
+            <button className="splashButtons"><a href="https://projects.oregonlive.com/maps/earthquakes/buildings/">Vulnerable Buildings</a></button><br/>
+            <button className="splashButtons"><a href="https://www.opb.org/news/series/unprepared/">Will We Be Ready?</a></button><br/>
           </div>
 
 
