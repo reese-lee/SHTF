@@ -18,5 +18,12 @@ namespace SHTF.Controllers
             return category;
         }
 
+        [HttpGet("[action]")]
+        public List<Contact> GetContacts(int startDateIndex)
+        {
+            List<Contact> contact = SHTFListData.GetContact();
+            return contact;
+        }
+
     }
 }
