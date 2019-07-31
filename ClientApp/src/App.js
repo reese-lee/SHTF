@@ -11,6 +11,7 @@ import {InfoOne} from './components/InfoOne';
 import MapWrapper from './components/MapWrapper';
 import Contact from './components/Contact';
 import ContactsList from './components/ContactsList';
+import MapDanger from './components/MapDanger';
 
 const getData = async () => {
   const response = await fetch('/api/Lists/GetCategories');
@@ -51,6 +52,7 @@ function App(props) {
         <Route path='/maps' component={Maps} />
         <Route path='/infoOne' component={InfoOne} />
         <Route path='/MapWrapper' component={MapWrapper} />
+        <Route path='/DangerZone' component={MapDanger} />
         <Route path='/lists'  render={()=><CategoriesList categories={categoryList}/>} />
         <Route path='/Contact' render={()=><ContactsList contacts={contactList}/>} />
       </Switch>
