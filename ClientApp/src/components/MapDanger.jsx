@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import { Layout } from './Layout';
 import { Link } from 'react-router-dom';
-import dangerZones from './../images/dangerzones.png';
+import dangerZones from './../images/dangerzone2.png';
 
 class MapDanger extends React.Component {
   static displayName = MapDanger.name;
@@ -16,7 +16,7 @@ class MapDanger extends React.Component {
             <img src={dangerZones} alt="Danger Zones" style={{ width: "100%" }}/>
           </div>
           <div className="buttonDiv">
-            <button className="splashButtons"><Link to='/maps'>Back to Maps</Link></button><br/>ÍÍ
+            <button className="splashButtons"><Link to='/maps'>Back to Maps</Link></button><br/>
           </div>
       </div>
       </Layout>
