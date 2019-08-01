@@ -86,7 +86,7 @@ function App(props) {
         <Route path='/Contact' render={()=><ContactsList contacts={contactList}/>} />
         <Route path='/Food' render={()=><FoodList foods={foodList}/>} />
         <Route path='/Item' render={()=><ItemsList items={itemList} />} />
-        <Route path='/Supply' component={AppContainer} />
+        <Route path='/Supply' render={()=><SuppliesList supplies={supplyList} />} />
         <Route path='/AppContainer' component={AppContainer}/>
 
       </Switch>
