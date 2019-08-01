@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 function Contact(props) {
 
   return (
-    <div className="buttonDiv">
-      {props.name}
+    <div className="contactDiv">
+      <p><strong>{props.name}</strong>
       <br/>
-      {props.note}
+      <strong>Notes:</strong> {props.note}</p>
     </div>
   );
 }
