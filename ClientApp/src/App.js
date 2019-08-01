@@ -36,7 +36,7 @@ function App(props) {
     getData().then(list => {
       setCategoryList(list)
     });
-    getData().then(contactList =>{
+    getContactList().then(contactList =>{
       setContactList(contactList)
     })
   }, []);
