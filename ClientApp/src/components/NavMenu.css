@@ -3,7 +3,10 @@
   text-align: center;
   word-break: break-all;
   font-family: 'Bungee', cursive;
+  /* margin: 0;
+  z-index: 1; */
 }
+
 
 html {
   font-size: 14px;
