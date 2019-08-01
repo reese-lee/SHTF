@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SupplyCheckBox from './SupplyCheckBox';
 
 function Food(props) {
 
   return (
     <div>
       <div className="contactDiv">
-        <p><strong>{props.name}</strong></p>
+        <SupplyCheckBox message={props.name} />
       </div>
       <div>
-        
+
       </div>
     </div>
   );
