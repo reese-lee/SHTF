@@ -41,8 +41,31 @@ body {
   width: 140pt;
 }
 
+.title4 {
+  font-size: 2.5em;
+  background-color: yellow;
+  margin-left: 15%;
+  margin-right: 30%;
+  border-radius: 5pt;
+  padding: 5%;
+  opacity: .88;
+  font-family: 'Bungee', cursive;
+  text-align: center;
+  color: black;
+  width: 200pt;
+}
+
 .buttonDiv {
   text-align: center;
+}
+
+.contactDiv {
+  font-size:1em;
+  background-color: yellow;
+  border-radius: 5pt;
+  padding: 3%;
+  opacity: .88;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .splashButtons {
