@@ -15,7 +15,7 @@ namespace SHTF.Context
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-      optionsBuilder.UseMySQL("server=localhost;database=list;user=root;password=root;port=8889;");
+      optionsBuilder.UseMySQL("server=localhost;database=list;user=root;port=3306");
     }
 
     // protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -45,8 +45,6 @@ namespace SHTF.Context
   {
     public int FoodId { get; set; }
     public string FoodName { get; set; }
-    public int FoodAmount { get; set; }
-    public bool FoodDone { get; set; }
     public int FoodCatId { get; set; }
   }
 
