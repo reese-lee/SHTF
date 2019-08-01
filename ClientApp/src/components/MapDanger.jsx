@@ -13,6 +13,7 @@ class MapDanger extends React.Component {
       <div>
         <h1 className="title3">Danger Zones</h1>
           <div>
+
             <img src={dangerZones} alt="Danger Zones" style={{ width: "100%" }}/>
           </div>
           <div className="buttonDiv">
