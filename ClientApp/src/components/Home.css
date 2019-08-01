@@ -17,6 +17,10 @@ background-size: cover;
   font-size: 1.5em;
 }
 
+.dot {
+  font-size: .5em;
+}
+
 .headerMain {
   text-align: center;
   margin-top: 30%;

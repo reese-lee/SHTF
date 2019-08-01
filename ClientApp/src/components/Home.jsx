@@ -10,7 +10,7 @@ export class Home extends Component {
       <div>
           <div className="headerMain">
             <h4 className="title2">When</h4>
-            <h1 className="title">S.H.T.F.</h1>
+            <h1 className="title">S<span class="dot">.</span>H<span class="dot">.</span>T<span class="dot">.</span>F<span class="dot">.</span></h1>
             <h4 className="title2">...Will you be ready?</h4>
           </div>
           <br/>
