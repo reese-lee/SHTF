@@ -3,6 +3,7 @@ import SupplyCheckBox from './SupplyCheckBox';
 import './Home.css';
 import { Layout } from './Layout';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 let item2 = <SupplyCheckBox message="Pepper spray" />;
 let item3 = <SupplyCheckBox message="GPS" />;
@@ -38,6 +39,9 @@ let allTheThings = [item2, item3, item4, item5, item6, item7, item8, item9, item
         <h1 className="title4">Supplies</h1>
           <div className="checkboxDiv">
             <h4>{items}</h4>
+          </div>
+          <div className="buttonDiv">
+            <button className="listsButton"><Link to='/Lists'>Back to Lists</Link></button>
           </div>
         </div>
       </Layout>
