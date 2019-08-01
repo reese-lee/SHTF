@@ -84,3 +84,31 @@ body {
 .buttonDiv a {
   color: black;
 }
+
+.listsButton {
+  text-align: center;
+  background: yellow;
+  border-radius: 5pt;
+  margin-top: 5%;
+  font-family: 'Bungee', cursive;
+  padding: 10pt;
+  font-size: 1em;
+  border: none;
+  width: 110pt;
+  opacity: .88;
+  color: black;
+}
+
+#checkbox {
+  align-items: center;
+  background: yellow;
+  border-radius: 5pt;
+  width: 80%;
+  font-size: 0.9em;
+  opacity: .88;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#checkboxDiv {
+  margin-left: 15%;
+}
