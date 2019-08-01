@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import './Home.css';
+import SupplyCheckBox from './SupplyCheckBox';
 
 function Item(props) {
 
   return (
     <div className="contactDiv">
-      <p><strong>{props.name}</strong>
-      <br/></p>
+      <SupplyCheckBox message={props.name} />
     </div>
   );
 }
