@@ -25,5 +25,25 @@ namespace SHTF.Controllers
             return contact;
         }
 
+        [HttpGet("[action]")]
+        public List<Food> GetFoods(int startDateIndex)
+        {
+            List<Food> food = SHTFListData.GetFood();
+            return food;
+        }
+
+        [HttpGet("[action]")]
+        public List<Item> GetItems(int startDateIndex)
+        {
+            List<Item> item = SHTFListData.GetItem();
+            return item;
+        }
+
+        [HttpGet("[action]")]
+        public List<Supply> GetSupplies(int startDateIndex)
+        {
+            List<Supply> supply = SHTFListData.GetSupply();
+            return supply;
+        }
     }
 }
