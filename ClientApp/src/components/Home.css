@@ -2,6 +2,10 @@ body {
   background-image: url('./../images/hood02.png');
   background-size: 100%;
   font-family: 'Open Sans', sans-serif;
+  background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .title {
@@ -99,14 +103,14 @@ body {
   color: black;
 }
 
-#checkbox {
+#checkbox  {
   align-items: center;
   background: yellow;
   border-radius: 5pt;
-  width: 80%;
   font-size: 0.9em;
   opacity: .88;
   font-family: 'Open Sans', sans-serif;
+  width: 80%;
 }
 
 #checkboxDiv {
