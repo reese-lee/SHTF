@@ -29,14 +29,34 @@ namespace SHTF
 
         public static List<Contact> GetContact()
         {
-            //this sets up the db connection
             using (var db = new SHTFListContext())
             {
-                //ToList() is a built-in method, and this is putting everything in the Category table into a list
                 return db.Contact.ToList();
             }
         }
 
+        public static List<Food> GetFood()
+        {
+            using (var db = new SHTFListContext())
+            {
+                return db.Food.ToList();
+            }
+        }
 
+        public static List<Item> GetItem()
+        {
+            using (var db = new SHTFListContext())
+            {
+                return db.Item.ToList();
+            }
+        }
+
+        public static List<Supply> GetSupply()
+        {
+            using (var db = new SHTFListContext())
+            {
+                return db.Supply.ToList();
+            }
+        }
     }
 }
