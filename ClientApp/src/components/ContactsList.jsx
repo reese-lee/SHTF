@@ -9,7 +9,7 @@ function ContactsList(props) {
     return (
       <Layout>
       <div>
-        <h1 className="title3">Contacts</h1>
+        <h1 className="title4">Contacts</h1>
 
         <div>
           {props.contacts.map(contact => {
