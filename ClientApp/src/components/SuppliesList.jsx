@@ -12,7 +12,7 @@ function SuppliesList(props) {
       <div>
         <h1 className="title4">Supplies</h1>
 
-        <div>
+        <div className="checkboxDiv">
           {props.supplies.map(supply => {
             return <Supply name={supply.supplyName}
             id={supply.supplyId}
@@ -20,7 +20,7 @@ function SuppliesList(props) {
           })}
         </div>
         <div>
-          
+
         </div>
         <div className="buttonDiv">
           <button className="listsButton"><Link to='/Lists'>Back to Lists</Link></button>
